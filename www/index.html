@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Drink Orders</title>
+
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+
+<!--jquery cdn-->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!--font awesome cdn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Angular-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<!--local links-->
+<!--main css style sheet-->
+<link rel="stylesheet" href="./css/style.css">
+
+<!--link to main js page-->
+<script type="text/javascript" src="js/main.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<style>
+
+/*div{
+   border:1px solid red;
+}*/
+
+
+/*div{
+   border:1px solid red;
+}*/
+
+
+</style>
+
+<div class="container-fluid">
+
+   <nav class="navbar navbar-default navbar-fixed-top navPad" style="margin-top:25px;">
+     <div class="container-fluid">
+        
+         <div class="row">
+            <div class="col-xs-6 text-center" onclick="location.href = 'index.html'" style="border-right:2px solid #E7E7E7;">
+               <i class="fa fa-home fa-3x"></i>
+            </div>
+
+            <div class="col-xs-6 text-center" onclick="location.href = 'pages/cart.html'">
+               <i class="fa fa-shopping-cart fa-3x"></i>
+            </div>
+         </div>
+
+
+
+     </div>
+   </nav>
+
+   <!--main page content area-->
+   <div class="container conMar">
+
+      <div class="well">
+
+         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#moreInfo">Open Modal</button>
+
+      </div>
+
+      <!-- Modal -->
+      <div id="moreInfo" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body" style="padding:35px;">
+               
+               <div class="row">
+                  
+                  <div class="col-sm-6 text-center">
+
+                     <br>
+                     <br>
+                     <h1><b><i>Some Drink</i></b></h1>
+                     <br>
+                     
+                     <p>Nulla a facilisis elit, vel dignissim orci. Maecenas venenatis feugiat dolor.</p>
+
+                  </div>
+
+                  <div class="col-sm-6 text-center">
+                     <img src="img/placeholder.png" class="img-resposive" height="200px" width="200px">
+                  </div>
+
+               </div>
+
+               <hr>
+
+
+               <div class="well">
+                  <p>Nulla a facilisis elit, vel dignissim orci. Maecenas venenatis feugiat dolor, 
+                  bibendum facilisis sapien hendrerit venenatis. Vivamus condimentum enim eu ligula 
+                  consequat, id dignissim dolor finibus. Curabitur dapibus augue ac commodo blandit. 
+                  Mauris a commodo erat. Duis in massa vehicula, consequat sapien aliquet, iaculis
+                  elit. Ut cursus risus gravida elit aliquet posuere.</p> 
+               </div>
+
+               <div class="row">
+
+                 <div class="col-sm-6">
+
+                    <div class="panel panel-default">
+
+                       <div class="panel-heading">Ingredients</div>
+                       
+                       <div class="panel-body">
+                          <ul>
+                             <li>Water</li>
+                             <li>Barley</li> 
+                             <li>Hops</li> 
+                          </ul>
+                       </div>
+
+                    </div>
+
+                 </div> 
+
+                 <div class="col-sm-6">
+
+                    <div class="panel panel-default">
+
+                       <div class="panel-heading">Nutrition </div>
+                       
+                       <div class="panel-body">
+                          <ul>
+                             <li>50 calories</li>
+                             <li>not great for you</li> 
+                             <li>its tasty though</li> 
+                          </ul>
+                       </div>
+
+                    </div>
+
+                 </div> 
+
+               </div>
+
+            </div>
+
+            <div class="modal-footer"> </div>
+          </div>
+
+        </div>
+      </div>
+
+
+   <!--content container-->
+   </div>
+
+   <!--the footer nav bar-->
+   <nav class="navbar navbar-default navbar-fixed-bottom navPad">
+     <div class="container-fluid">
+        
+         <div class="row">
+            <div class="col-xs-12 text-center" onclick="goBack();">
+               <i class="fa fa-mail-reply fa-3x"></i>
+            </div>
+         </div>
+
+     </div>
+   </nav>
+
+
+
+</div>
+
+</body>
+</html>
+
+
+

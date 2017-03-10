@@ -1,0 +1,31 @@
+/*used to pad the navbars for better logo display*/
+.navPad{
+   padding:7px;
+}
+
+/*used to stop nav overlap*/
+.conMar{
+   margin-top:110px;
+   margin-bottom:85px;
+}
+
+/*styles to center the modul section*/
+.modal {
+
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
