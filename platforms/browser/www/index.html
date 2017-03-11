@@ -50,19 +50,19 @@
 
 </style>
 
-<div class="container-fluid">
+<div class="container-fluid" ng-app="myApp">
 
    <nav class="navbar navbar-default navbar-fixed-top navPad" style="margin-top:25px;">
      <div class="container-fluid">
         
          <div class="row">
-            <div class="col-xs-6 text-center" onclick="location.href = '#/'" style="border-right:2px solid #E7E7E7;">
+            <a href="#/" class="col-xs-6 text-center" style="border-right:2px solid #E7E7E7;">
                <i class="fa fa-home fa-3x"></i>
-            </div>
+            </a>
 
-            <div class="col-xs-6 text-center" onclick="location.href = '#cart'">
+            <a href="#/cart" class="col-xs-6 text-center">
                <i class="fa fa-shopping-cart fa-3x"></i>
-            </div>
+            </a>
          </div>
 
 
@@ -180,9 +180,9 @@
      <div class="container-fluid">
         
          <div class="row">
-            <div class="col-xs-12 text-center" onclick="goBack();">
+            <a class="col-xs-12 text-center" back-button>
                <i class="fa fa-mail-reply fa-3x"></i>
-            </div>
+            </a>
          </div>
 
      </div>
