@@ -1,1 +1,9 @@
-<h1>Popular</h1>
+<!--includes the modal-->
+<div ng-include="'pages/modal.html'"></div>
+
+<div class="well wellPad" ng-repeat="drink in drinks" ng-if="drink.popular==true">
+
+   <!--includes the selection parts for drinks parts-->
+   <div ng-include="'pages/drinkSelection.html'"></div>  
+
+</div>

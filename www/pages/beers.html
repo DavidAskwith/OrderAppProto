@@ -3,36 +3,8 @@
 
 <div class="well wellPad" ng-repeat="drink in drinks" ng-if="drink.category=='beer'">
 
-   <div class="row">
-
-      <div class="col-xs-12">
-         <h2>{{drink.name}}: <span class="label label-primary">$ {{drink.price}}</span></h2>
-      </div>
-
-   </div>
-
-   <div class="row">
-      <div class="col-xs-6">
-         <br/>
-         <p>{{drink.description}}</p>
-         <br/>
-      </div>
-
-      <div class="text-center col-xs-6"><img src=""/></div>
-
-   </div>
-
-   <div class="row">
-      <div class="col-xs-6 text-center">
-          <button type="button" class="btn btn-lg btn-primary">-</button>
-          <button type="button" class="btn btn-lg btn-primary"><span class="badge">7</span></button>
-          <button type="button" class="btn btn-lg btn-primary">+</button>
-          <button type="button" class="btn btn-lg btn-primary">Add</button>
-      </div>
-      <div class="col-xs-6 text-center">
-         <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#moreInfo">More Info</button>
-      </div>
-   </div>
+   <!--includes the selection parts for drinks parts-->
+   <div ng-include="'pages/drinkSelection.html'"></div>
 
 </div>
 

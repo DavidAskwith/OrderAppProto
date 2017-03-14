@@ -17,7 +17,8 @@ app.config(function($routeProvider) {
         controller : "myCtrl"
     })
     .when("/mixed", {
-        templateUrl : "pages/mixed.html"
+        templateUrl : "pages/mixed.html",
+        controller : "myCtrl"
 
     }).when("/popular", {
         templateUrl : "pages/popular.html",
