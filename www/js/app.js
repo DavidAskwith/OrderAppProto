@@ -1,5 +1,3 @@
-//the main javascript page
-
 //app creation
 var app = angular.module("myApp", ["ngRoute"]);
 
@@ -24,20 +22,4 @@ app.config(function($routeProvider) {
     });
 });
 
-//controller used for back button
-app.controller('myCtrl', ['$scope', function($scope) {
 
-  
-}]);
-
-//directive for a back button
-app.directive("backButton", ["$window", function ($window) {
-    return {
-        restrict: "A",
-        link: function (scope, elem, attrs) {
-            elem.bind("click", function () {
-                $window.history.back();
-            });
-        }
-    };
-}]);
