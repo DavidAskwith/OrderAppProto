@@ -3,6 +3,11 @@
    padding:7px;
 }
 
+.wellPad{
+   padding-right:50px;
+   padding-left:50px;
+}
+
 /*used to stop nav overlap*/
 .conMar{
    margin-top:110px;

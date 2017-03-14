@@ -5,19 +5,23 @@ var app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "pages/main.html"
+        templateUrl : "pages/main.html",
+        controller : "myCtrl"
     })
     .when("/cart", {
-        templateUrl : "pages/cart.html"
+        templateUrl : "pages/cart.html",
+        controller : "myCtrl"
     })
     .when("/beers", {
-        templateUrl : "pages/beers.html"
+        templateUrl : "pages/beers.html",
+        controller : "myCtrl"
     })
     .when("/mixed", {
         templateUrl : "pages/mixed.html"
 
     }).when("/popular", {
-        templateUrl : "pages/popular.html"
+        templateUrl : "pages/popular.html",
+        controller : "myCtrl"
 
     });
 });
