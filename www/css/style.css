@@ -22,6 +22,10 @@
     content: " ";
     height: 100%;
   }
+
+  .modDescPad{
+     padding-top:45px;
+  }
 }
 
 .modal-dialog {
