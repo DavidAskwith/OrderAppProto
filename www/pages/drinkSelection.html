@@ -19,9 +19,9 @@
 
 <div class="row">
    <div class="col-xs-6 text-center">
-       <button type="button" class="btn btn-lg btn-primary">-</button>
-       <span class="label label-default" style="font-size:25px;">0</span>
-       <button type="button" class="btn btn-lg btn-primary">+</button>
+       <button type="button" class="btn btn-lg btn-primary" ng-click="drink.number = drink.number - 1">-</button>
+       <span class="label label-default" style="font-size:25px;">{{drink.number}}</span>
+       <button type="button" class="btn btn-lg btn-primary" ng-click="drink.number = drink.number + 1">+</button>
        <button type="button" class="btn btn-lg btn-primary" ng-click="cartService.addToCart(drink)">Add To Cart</button>
    </div>
    <div class="col-xs-6 text-center">
