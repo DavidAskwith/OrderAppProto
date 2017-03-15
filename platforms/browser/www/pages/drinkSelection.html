@@ -20,12 +20,11 @@
 <div class="row">
    <div class="col-xs-6 text-center">
        <button type="button" class="btn btn-lg btn-primary">-</button>
-       <span class="label label-default" style="font-size:28px;">0</span>
+       <span class="label label-default" style="font-size:25px;">0</span>
        <button type="button" class="btn btn-lg btn-primary">+</button>
-       <button type="button" class="btn btn-lg btn-primary">Add</button>
+       <button type="button" class="btn btn-lg btn-primary" ng-click="cartService.addToCart(drink)">Add To Cart</button>
    </div>
    <div class="col-xs-6 text-center">
       <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#moreInfo">More Info</button>
    </div>
 </div>
-

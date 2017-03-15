@@ -1,5 +1,10 @@
 //controller used for back button
-app.controller("myCtrl", ["$scope", function($scope) {
+app.controller("mainController", function($scope, cartService) {
+
+    //makes the cart service availab;e to scope
+    $scope.cartService = cartService;
+
+    $scope.clickAble = true;
 
     //an array of object that holds the drinks
     $scope.drinks = [
@@ -17,10 +22,15 @@ app.controller("myCtrl", ["$scope", function($scope) {
             category:"mixed",
             popular:false
         }
-   ];
+    ];
 
-   //holds the drinks for the cart
-   $scope.cart=[];
+});
 
-}]);
 
+app.controller("cartController", function($scope, cartService) {
+
+    //sets the cart items array to the services array of cart items
+    $scope.cartItems = cartService.getCart();
+
+    console.log($scope.cartItems);
+});

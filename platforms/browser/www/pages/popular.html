@@ -1,9 +1,10 @@
 <!--includes the modal-->
 <div ng-include="'pages/modal.html'"></div>
 
-<div class="well wellPad" ng-repeat="drink in drinks" ng-if="drink.popular==true">
+<div class="well" ng-repeat="drink in drinks" ng-if="drink.popular==true">
+
 
    <!--includes the selection parts for drinks parts-->
-   <div ng-include="'pages/drinkSelection.html'"></div>  
+   <div ng-include="'pages/drinkSelection.html'"></div>
 
 </div>

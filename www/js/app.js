@@ -6,24 +6,22 @@ app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
         templateUrl : "pages/main.html",
-        controller : "myCtrl"
     })
     .when("/cart", {
         templateUrl : "pages/cart.html",
-        controller : "myCtrl"
+        controller : "cartController"
     })
     .when("/beers", {
         templateUrl : "pages/beers.html",
-        controller : "myCtrl"
+        controller : "mainController"
     })
     .when("/mixed", {
         templateUrl : "pages/mixed.html",
-        controller : "myCtrl"
+        controller : "mainController"
 
     }).when("/popular", {
         templateUrl : "pages/popular.html",
-        controller : "myCtrl"
-
+        controller : "mainController"
     });
 });
 
