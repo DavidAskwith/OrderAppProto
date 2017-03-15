@@ -22,7 +22,12 @@ app.config(function($routeProvider) {
     }).when("/popular", {
         templateUrl : "pages/popular.html",
         controller : "mainController"
+
+    }).when("/search", {
+        templateUrl : "pages/search.html",
+        controller : "mainController"
     });
+
 });
 
 
