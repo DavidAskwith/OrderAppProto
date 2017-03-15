@@ -1,0 +1,19 @@
+<div class="container-fluid searchContainer">
+    <div class="input-group searchBar">
+      <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search "></i></span>
+      <input type="text" class="form-control" ng-model="search" placeholder="Search" aria-describedby="basic-addon1">
+    </div>
+</div>
+
+<!--includes the modal-->
+<div ng-include="'pages/modal.html'"></div>
+
+</br> </br> </br> </br>
+
+<div class="well" ng-repeat="drink in drinks | filter:search">
+
+   <!--includes the selection parts for drinks parts-->
+   <div ng-include="'pages/drinkSelection.html'"></div>
+
+</div>
+
