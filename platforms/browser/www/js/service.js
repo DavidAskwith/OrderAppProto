@@ -2,20 +2,30 @@
 //can be stored across the app
 app.service("cartService", function() {
 
-    //an array that holds the cart items
-    var  cartItems = [];
+   //an array that holds the cart items
+   var  cartItems = [];
 
-    //returns the array
-    this.getCart = function () {
+   //flag used to stop adding itmes with same id to cart
+   //stops crash of cart further implimentation would be needed
+   //to stop adding of the same items when page is changed
+   //maybe a project for later if this continues
+   var canAdd = true; 
 
-        return cartItems;
-    };
+   //returns the array
+   this.getCart = function () {
 
-    //push a the passed in drink to the array
-    this.addToCart = function (drink){
+      return cartItems;
+   };
 
-        cartItems.push(drink);
-        
-    };
+   //push a the passed in drink to the array
+   this.addToCart = function (drink){
+  
+      if (canAdd){
+
+         cartItems.push(drink);
+
+         canAdd = false;
+      }    
+   };
 
 });

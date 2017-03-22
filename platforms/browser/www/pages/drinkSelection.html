@@ -1,5 +1,9 @@
-<div class="row">
+<div id="cartAlert{{$index}}" class="alert alert-success text-center collapse">
+   <strong>Added to cart!</strong>
+</div>
 
+<div class="row">
+$('#cartAlert{{$index}}')
    <div class="col-xs-12">
       <h2>{{drink.name}}: <span class="label label-primary">$ {{drink.price}}</span></h2>
    </div>
@@ -22,9 +26,11 @@
        <button type="button" class="btn btn-lg btn-primary" ng-click="drink.number = drink.number - 1">-</button>
        <span class="label label-default" style="font-size:25px;">{{drink.number}}</span>
        <button type="button" class="btn btn-lg btn-primary" ng-click="drink.number = drink.number + 1">+</button>
-       <button type="button" class="btn btn-lg btn-primary" ng-click="cartService.addToCart(drink)">Add To Cart</button>
+       <button type="button" class="btn btn-lg btn-primary" ng-click="cartService.addToCart(drink)" data-toggle="collapse" data-target="#cartAlert{{$index}}">Add To Cart</button>
    </div>
    <div class="col-xs-6 text-center">
       <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#moreInfo">More Info</button>
    </div>
 </div>
+
+
