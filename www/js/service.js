@@ -5,12 +5,6 @@ app.service("cartService", function() {
    //an array that holds the cart items
    var  cartItems = [];
 
-   //flag used to stop adding itmes with same id to cart
-   //stops crash of cart further implimentation would be needed
-   //to stop adding of the same items when page is changed
-   //maybe a project for later if this continues
-   var canAdd = true; 
-
    //returns the array
    this.getCart = function () {
 
@@ -19,12 +13,22 @@ app.service("cartService", function() {
 
    //push a the passed in drink to the array
    this.addToCart = function (drink){
+
+      var add = true;
+
+      cartItems.forEach (function(c){
+
+         if(c.$$hashKey == drink.$$hashKey){
+
+            add = false;
+         }
+
+      });
   
-      if (canAdd){
+      if (add){
 
          cartItems.push(drink);
 
-         canAdd = false;
       }    
    };
 
