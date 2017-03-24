@@ -4,31 +4,33 @@
 
 <div class="row">
 
-   <div class="col-xs-12">
+   <div class="col-sm-12">
       <h2>{{drink.name}}: <span class="label label-primary">$ {{drink.price}}</span></h2>
    </div>
 
 </div>
 
 <div class="row">
-   <div class="col-xs-6">
+   <div class="col-sm-6">
       <br/>
       <p>{{drink.description}}</p>
       <br/>
    </div>
 
-   <div class="text-center col-xs-6"><img src="{{drink.image}}"/></div>
+   <div class="text-center col-sm-6"><img src="{{drink.image}}"/></div>
 
 </div>
 
 <div class="row">
-   <div class="col-xs-6 text-center">
+   <div class="col-sm-4 text-center" style="margin-bottom:10px; margin-top:35px;">
        <button type="button" class="btn btn-lg btn-primary" ng-click="drink.number = drink.number - 1">-</button>
        <span class="label label-default" style="font-size:25px;">{{drink.number}}</span>
        <button type="button" class="btn btn-lg btn-primary" ng-click="drink.number = drink.number + 1">+</button>
+   </div>
+   <div class="col-sm-4 text-center" style="margin-bottom:10px;">
        <button type="button" class="btn btn-lg btn-primary" ng-click="cartService.addToCart(drink)" data-toggle="collapse" data-target="#cartAlert{{$index}}">Add To Cart</button>
    </div>
-   <div class="col-xs-6 text-center">
+   <div class="col-sm-4 text-center">
       <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#moreInfo">More Info</button>
    </div>
 </div>
