@@ -14,18 +14,29 @@ app.service("cartService", function() {
    //push a the passed in drink to the array
    this.addToCart = function (drink){
 
-      var add = true;
+      var canAdd = true;
 
+      //runs through each item in the cart
       cartItems.forEach (function(c){
 
+         //comapres the hash key of new item to avoid
+         //duplicate object
          if(c.$$hashKey == drink.$$hashKey){
 
-            add = false;
+            canAdd = false;
+
+         //if the names are the same increments 
+         //quantity and stops adding to cart
+         }else if(c.name == drink.name){
+
+            c.number += drink.number;
+
+            canAdd = false;
          }
 
       });
   
-      if (add){
+      if (canAdd){
 
          cartItems.push(drink);
 
