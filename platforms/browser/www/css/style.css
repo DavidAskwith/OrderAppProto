@@ -18,7 +18,8 @@
 .totalSec{
 
     bottom:55px;
-    padding-bottom:5px;
+    padding-top:10px;
+    padding-bottom:10px;
     position:fixed;
     width:90%;
     right: 0;
